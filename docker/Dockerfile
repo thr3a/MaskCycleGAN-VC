@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY environment.yml ./
 
-# RUN apt-get update && apt-get install -y libsndfile1-dev
+RUN apt-get update && apt-get install -y build-essential
 RUN conda env create -f environment.yml
 RUN  conda activate MaskCycleGAN-VC

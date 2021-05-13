@@ -1,4 +1,4 @@
-FROM continuumio:anaconda3:2021.04
+FROM continuumio/anaconda3:2021.04
 
 WORKDIR /app
 

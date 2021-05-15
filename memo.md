@@ -16,15 +16,15 @@ docker run --cpuset-cpus 0 --gpus all -v $(pwd):/app  --rm voice-change bash -lc
 
 ```
 python -W ignore::UserWarning -m mask_cyclegan_vc.test \
-    --name mask_cyclegan_vc_fujitou_tsuchiya \
+    --name mask_cyclegan_vc_takion_suzuka \
     --save_dir results/ \
     --preprocessed_data_dir converted_data \
     --gpu_ids 0 \
-    --speaker_A_id fujitou \
-    --speaker_B_id tsuchiya \
-    --ckpt_dir results/mask_cyclegan_vc_fujitou_tsuchiya/ckpts \
-    --load_epoch 500 \
-    --model_name generator_A2B \
+    --speaker_A_id takion \
+    --speaker_B_id suzuka \
+    --ckpt_dir results/mask_cyclegan_vc_takion_suzuka/ckpts \
+    --load_epoch 1540 \
+    --model_name generator_B2A \
 ```
 
 
